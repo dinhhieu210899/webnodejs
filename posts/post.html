@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: block;
+            width: 1100px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+        section{
+            margin: 10px;
+        }
+
+        section ul{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        section ul li{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        li{
+            list-style-type: none;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 30px;
+        }
+
+        .codes{
+            padding: 10px;
+            margin-top: 3px;
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 10px;
+        }
+
+        .codes > li{
+            font-family: Consolas , monaco , monospace;
+            font-weight: 400;
+            color: rgb(2, 15, 15);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h1>Giới thiệu về App Engine</h1>
+            <p>App Engine cho phép bạn tạo và lưu trữ các ứng dụng trên cùng một hệ thống cung cấp năng lượng cho các
+                ứng
+                dụng của Google.
+                App Engine cung cấp sự phát triển và triển khai nhanh chóng;
+                quản trị đơn giản, không cần lo lắng về phần cứng, bản vá hoặc bản sao lưu; và khả năng mở rộng dễ dàng.
+            </p>
+        </section>
+        <section>
+            <h1>Người thực hiện</h1>
+            <ul>
+                <li><strong>Tên: </strong>Lê Đình Hiếu</li>
+                <li><strong>Mã sinh viên: </strong>17030181</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Các bước thực hiện để deploy project (nodejs): </h1>
+            <ul>
+                <li>
+                    <div><strong>Bước 1:</strong> Chuẩn bị một project nodejs sẵn</div> 
+                </li>
+                <li>
+                    <div><strong>Bước 2: </strong>Đưa project lên github</div>
+                    <div>
+                        <ul class="codes">
+                            <li>git init</li>
+                            <li>git add .</li>
+                            <li>git commit -m "Khởi tạo project"</li>
+                            <li>git push origin --all</li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div><strong>Bước 3: </strong>Clone project về cloud.</div>
+                    <div>
+                        <ul class="codes">
+                            <li>git clone "link"</li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div><strong>Bước 4: </strong>Deploy app</div>
+                    <div>
+                        <ul class="codes">
+                            <li>gcloud app deploy</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+     
+    </div>
+</body>
+
+</html>
